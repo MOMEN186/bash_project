@@ -20,7 +20,11 @@ case "$input" in
 ./show_system_information.sh
 ;;
 2)
-./list_users.sh
+./list_user.sh
+;;
+3)
+read -p "Enter username " user
+./search_user.sh "$user"
 ;;
 *)
 echo "exit"
