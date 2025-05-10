@@ -42,11 +42,16 @@ read -p "Enter username " user
 read -p "Enter username " user
 ./chg_passwd.sh "$user"
 ;;
+8)
+read -p "Enter username " user
+./lock_user.sh "$user"
+;;
+;;
 10)
 break
 ;;
 *)
-echo "exit"
+echo "invalid option"
 ;;
 esac
 
