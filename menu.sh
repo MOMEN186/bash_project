@@ -27,8 +27,12 @@ read -p "Enter username " user
 ./search_user.sh "$user"
 ;;
 4)
-read -p "Enter username" user
+read -p "Enter username " user
 ./add_user.sh "$user"
+;;
+5)
+read -p "Enter username " user
+./delete_user.sh "$user"
 ;;
 *)
 echo "exit"
