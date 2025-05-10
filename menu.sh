@@ -46,6 +46,9 @@ read -p "Enter username " user
 read -p "Enter username " user
 ./lock_user.sh "$user"
 ;;
+9)
+read -p "Enter username " user
+./unlock_user.sh "$user"
 ;;
 10)
 break
