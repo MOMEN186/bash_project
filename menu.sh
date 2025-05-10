@@ -26,6 +26,10 @@ case "$input" in
 read -p "Enter username " user
 ./search_user.sh "$user"
 ;;
+4)
+read -p "Enter username" user
+./add_user.sh "$user"
+;;
 *)
 echo "exit"
 ;;
