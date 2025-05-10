@@ -34,6 +34,14 @@ read -p "Enter username " user
 read -p "Enter username " user
 ./delete_user.sh "$user"
 ;;
+6)
+read -p "Enter username " user
+./user_details.sh "$user"
+;;
+
+10)
+break
+;;
 *)
 echo "exit"
 ;;
